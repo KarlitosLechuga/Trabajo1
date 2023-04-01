@@ -1,0 +1,34 @@
+body {
+    padding: 20px;
+}
+
+/* div {
+    border: 1px solid blue;
+} */
+
+.logo {
+    width: 100%;
+}
+
+.menu-superior {
+    text-align: right;
+}
+
+.menu-superior li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.producto {
+    width: 100%;
+}
+
+#datos, #foto, #botones {
+    border: 1px solid red;
+    
+}
+
+.ancho-boton {
+    width: 200px;
+}
+
