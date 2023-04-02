@@ -33,6 +33,13 @@
     width: 100%;
    
 }
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
 .logo-glock{
     width: 100px;
@@ -49,4 +56,32 @@
     margin: auto;
     overflow: hidden;
     padding-bottom: 140px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(146, 129, 129);
+}
+    
+.socials a img{
+    width: 50px;
+    
+}
+
+.footer-bottom{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
 }
