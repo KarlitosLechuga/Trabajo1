@@ -24,7 +24,7 @@ body {
 }
 
 #datos, #foto, #botones {
-    border: 1px solid red;
+    border: 1px solid white;
     
 }
 
@@ -115,5 +115,5 @@ body {
 }
 
 .card {
-    margin:center;
+    margin:auto;
 }
