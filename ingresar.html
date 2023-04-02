@@ -70,7 +70,7 @@
         </div>
       </div>
     </nav>
-    <main id="main">
+    <main class="center-screen">
       <div class="container">
         <section class="text-center">
           <h1>Usuario</h1>
@@ -81,43 +81,21 @@
                 <!-- Campos del registro de usuario -->
                 <div class="col">
                   <div class="mb-3 fw-bold">
-                    <label for="rut" class="form-label">RUT</label>
-                    <input type="text" class="form-control" id="rut" placeholder="EJ: 123456789" required>
-                    <div class="invalid-feedback">Debe llenar el campo RUT</div>
+                    <label for="rut" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" placeholder="prueba@algo.com" required>
+                    <div class="invalid-feedback">Debe llenar el campo Correo</div>
                   </div>
                   <div class="mb-3 fw-bold">
-                    <label for="rut" class="form-label">Nombres</label>
-                    <input type="text" class="form-control" id="nombres" placeholder="Juan Carlos" required>
-                    <div class="invalid-feedback">Debe llenar el campo Nombres</div>
+                    <label for="rut" class="form-label">Contraseña</label>
+                    <input type="email" class="form-control" id="contraseña" placeholder="***********" required>
+                    <div class="invalid-feedback">Debe llenar el campo Contraseña</div>
                   </div>
-                  <div class="mb-3 fw-bold">
-                    <label for="rut" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="apellidos" placeholder="Perez Peralta" required>
-                    <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                    <button type="reset" class="btn">Limpiar</button>
                   </div>
-                  <div class="mb-3 fw-bold">
-                    <label for="rut" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="prueba@algo.com" required>
-                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electronico</div>
-                    <div class="invalid-feedback">Debe llenar el campo email</div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Registrarse</button>
-                  <button type="reset" class="btn btn-primary">Limpiar</button>
                 </div>
-                <div class="col">
-                  <table>
-                    <tr>
-                      <td>
-                        <img src="img/usuario.webp" alt="" class="user-image">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input type="file" class="form-control">
-                      </td>
-                    </tr>
-                  </table>
-                </div>
+                
                 <!-- foto de perfil -->
 
                 <div class="col">
