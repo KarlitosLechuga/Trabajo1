@@ -27,11 +27,24 @@ body {
 #datos,
 #foto,
 #botones {
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 .ancho-boton {
   width: 200px;
+}
+
+.carrusel-img{
+    width: 100%;
+   
+}
+
+.logo-glock{
+    width: 100px;
+}
+
+.portafolio{
+    background: #949fa365;
 }
 
 .header {
@@ -52,6 +65,7 @@ body {
   line-height: 150%;
   font-size: 0.85em;
 }
+
 
 .singupFrm {
   display: flex;
@@ -138,6 +152,16 @@ body {
 .body{
     width: 100%;
     background: #00000096;
+}
+
+.center-screen {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 10px;
+    color: black;
+
 }
 
 .titulo{
@@ -271,5 +295,15 @@ footer{
     padding: 20px 0;
     text-align: center;
 }
+
 /* footer end */
+
+
+.user-image {
+    max-width: 200px;
+}
+
+.card {
+    margin:auto;
+}
 
