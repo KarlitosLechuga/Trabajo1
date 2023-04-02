@@ -37,6 +37,13 @@ body {
     line-height:150%;
     font-size:.85em;
 }
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 
 .main {
     text-align:center;
@@ -50,6 +57,45 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+
+.contenedor{
+    padding: 60px 0;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 140px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(146, 129, 129);
+}
+    
+.socials a img{
+    width: 50px;
+    
+}
+
+.footer-bottom{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+
 .user-image {
     max-width: 200px;
+
 }
