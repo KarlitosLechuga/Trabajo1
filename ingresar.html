@@ -70,13 +70,64 @@
         </div>
       </div>
     </nav>
-    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <label for="formGroupExampleInput" class="form-label">Nombre de usuario</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese nombre de usuario">
+    <main id="main">
+      <div class="container">
+        <section class="text-center">
+          <h1>Usuario</h1>
+          <br>
+          <form class="row g-3 needs validation" action="" novalidate>
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Campos del registro de usuario -->
+                <div class="col">
+                  <div class="mb-3 fw-bold">
+                    <label for="rut" class="form-label">RUT</label>
+                    <input type="text" class="form-control" id="rut" placeholder="EJ: 123456789" required>
+                    <div class="invalid-feedback">Debe llenar el campo RUT</div>
+                  </div>
+                  <div class="mb-3 fw-bold">
+                    <label for="rut" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Juan Carlos" required>
+                    <div class="invalid-feedback">Debe llenar el campo Nombres</div>
+                  </div>
+                  <div class="mb-3 fw-bold">
+                    <label for="rut" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Perez Peralta" required>
+                    <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
+                  </div>
+                  <div class="mb-3 fw-bold">
+                    <label for="rut" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="prueba@algo.com" required>
+                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electronico</div>
+                    <div class="invalid-feedback">Debe llenar el campo email</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrarse</button>
+                  <button type="reset" class="btn btn-primary">Limpiar</button>
+                </div>
+                <div class="col">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src="img/usuario.webp" alt="" class="user-image">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="file" class="form-control">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <!-- foto de perfil -->
+
+                <div class="col">
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese contraseña">
-      </div>
+    </main>
   </body>
 </html>

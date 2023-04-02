@@ -1,7 +1,10 @@
-.body {
-    width: 100%;
-    background-color: black;
+body {
+    padding: 20px;
 }
+
+/* div {
+    border: 1px solid blue;
+} */
 
 .logo {
     width: 100%;
@@ -17,11 +20,11 @@
 }
 
 .producto {
-    width: 3    00px;
+    width: 100%;
 }
 
 #datos, #foto, #botones {
-    border: 1px solid white;
+    border: 1px solid red;
     
 }
 
@@ -29,30 +32,24 @@
     width: 200px;
 }
 
-.carrusel-img{
-    width: 100%;
-   
+.header {
+    text-align:center;
+    line-height:150%;
+    font-size:.85em;
 }
 
-.logo-glock{
-    width: 100px;
+.main {
+    text-align:center;
+    line-height:150%;
+    font-size:.85em;
 }
 
-.portafolio{
-    background: #949fa365;
+.singupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-.contenedor{
-    padding: 60px 0;
-    width: 100%;
-    /* max-width: 1400px; */
-    margin: auto;
-    overflow: hidden;
-    padding-bottom: 140px;
-}
-
-.card{
-    /* padding:60px 0; */
-    margin: auto;
-    /* width:100% */
+.user-image {
+    max-width: 200px;
 }
