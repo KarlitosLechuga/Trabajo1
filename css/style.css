@@ -20,7 +20,7 @@ body {
 }
 
 .producto {
-    width: 100%;
+    width: 300px;
 }
 
 #datos, #foto, #botones {
@@ -30,6 +30,19 @@ body {
 
 .ancho-boton {
     width: 200px;
+}
+
+.carrusel-img{
+    width: 100%;
+   
+}
+
+.logo-glock{
+    width: 100px;
+}
+
+.portafolio{
+    background: #949fa365;
 }
 
 .header {
@@ -97,4 +110,8 @@ body {
 }
 .user-image {
     max-width: 200px;
+}
+
+.card {
+    margin:center;
 }
