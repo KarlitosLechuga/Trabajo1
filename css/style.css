@@ -50,3 +50,9 @@
     overflow: hidden;
     padding-bottom: 140px;
 }
+
+.card{
+    /* padding:60px 0; */
+    margin: auto;
+    /* width:100% */
+}
