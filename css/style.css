@@ -1,10 +1,7 @@
-body {
-    padding: 20px;
+.body {
+    width: 100%;
+    background-color: black;
 }
-
-/* div {
-    border: 1px solid blue;
-} */
 
 .logo {
     width: 100%;
@@ -20,7 +17,7 @@ body {
 }
 
 .producto {
-    width: 100%;
+    width: 3    00px;
 }
 
 #datos, #foto, #botones {
@@ -32,3 +29,24 @@ body {
     width: 200px;
 }
 
+.carrusel-img{
+    width: 100%;
+   
+}
+
+.logo-glock{
+    width: 100px;
+}
+
+.portafolio{
+    background: #949fa365;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 140px;
+}
