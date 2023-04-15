@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glock - Mis Datos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- cabecera con menu superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html"> <img class="logo-glock" src="img/logo-glock.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="registro.html">Registrarme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- titulo -->
+    <h1>Mis Datos</h1>
+    <br>
+
+    <!-- formulario de cliente -->
+    <form action="">
+        <div class="container-fluid">
+            <!-- todos los datos del cliente -->
+            <div class="row">
+                <!-- datos del cliente -->
+                <div class="col-sm-12 col-md-6" id="datos">
+                  
+                    <div class="mb-3">
+                      <label for="rut" class="form-label">RUT</label>
+                      <input type="text" placeholder="Ejemplo: 12345678-9" class="form-control" id="rut" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="nombres" class="form-label">Nombres</label>
+                      <input type="text" placeholder="Escriba sus Nombres" class="form-control" id="nombres" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="Apellidos" class="form-label">Apellidos</label>
+                      <input type="text" placeholder="Escriba sus Apellidos" class="form-control" id="apellidos" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="correo" class="form-label">Correo</label>
+                      <input type="text" placeholder="ejemplo@gmail.com" class="form-control" id="correo" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <label for="contraseña" class="form-label">Contraseña</label>
+                      <input type="text" class="form-control" id="contraseña">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contraseña" class="form-label">Repetir Contraseña</label>
+                      <input type="text" class="form-control" id="contraseña">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Deseo suscribirme con un aporte de $3000 mensaules y obtener un 5% de descuento en mis compras</label>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="direccion" class="form-label">Dirección</label>
+                      <textarea rows="4" type="text" class="form-control" id="direccion"></textarea>
+                    </div>
+                    
+                  
+                </div>
+
+                <!-- foto cliente -->
+                <div class="col-sm-12 col-md-6" id="foto">
+                    FOTO DEL CLIENTE  <br>
+
+                    <form role="form">
+                      
+                      <img class="foto-cliente" src="img/usuario.webp" alt="">
+                      <div class="form-group">
+                        <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+                        <input type="file" id="ejemplo_archivo_1">
+                        
+                      </div>
+                      
+                    </form>
+
+                    
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="row" id="botones">
+                <div class="col text-center">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-primary">Limpiar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+      <!-- pie de pagina -->
+      <br><br>
+      <hr>
+      <div class="row">
+        <footer>
+          <div class="footer-content">
+              <h3> GLOCK</h3>
+              <p>Aqui encontraras todo para hacer pagar a tus enemigos </p>
+              <p> contacto:  (+56) 964856221</p>
+              <ul class="socials">
+                  <li><a href=""><img src="img/logo-wsp.png  " class="fa fa-f  acebook"></a></li>
+                  <li><a href=""><img src="img/logo-ig.png" class="fa fa-twitter"></a></li>
+                  <li><a href=""><img src="img/logo-fb.png" class="fa fa-google-plus"></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy;2023 GLOCK. Diseñado por los Raja Hedionda </p>
+    
+          </div>
+      </footer>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
