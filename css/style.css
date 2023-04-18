@@ -307,3 +307,51 @@ footer{
     margin:auto;
 }
 
+
+/* -------------boleta-----------*/
+
+.bo-contenedor {
+  display: flex;
+  width: 100%;
+}
+
+.bo-titulo {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 1em;
+}
+
+.bo-estado-compra {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bo-etapa-vendido,
+.bo-etapa-despachado,
+.bo-etapa-entregado {
+  width: 33.33%;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bo-etapa-vendido.activo {
+  color: green;
+}
+
+.bo-etapa-despachado.activo,
+.bo-etapa-entregado.activo {
+  color: gray;
+}
+
+.bo-etapa-vendido img,
+.bo-etapa-despachado img,
+.bo-etapa-entregado img {
+  height: 50px;
+  margin-bottom: 10px;
+}
