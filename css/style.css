@@ -355,3 +355,64 @@ footer{
   height: 50px;
   margin-bottom: 10px;
 }
+
+/* -------------------ropa--------------- */
+
+.fi-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fi-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.fi-column {
+  width: 30%;
+  padding: 10px;
+}
+
+.fi-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.fi-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fi-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.fi-description p {
+  margin: 0;
+}
+
+.fi-image:hover .fi-description {
+  transform: translateY(-50%);
+  background-color:rgb(181, 181, 252)
+}
+
+.fii-container {
+  text-align: center;
+}
