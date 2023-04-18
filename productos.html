@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glock - Mantenedor de Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- cabecera con menu superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html"> <img class="logo-glock" src="img/logo-glock.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="registro.html">Registrarme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="administracion.html">Administrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="inicio.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- titulo -->
+    <h1>Mantenedor de Productos</h1>
+    <br>
+
+    <!-- formulario de producto -->
+    <form action="">
+        <div class="container-fluid">
+            <!-- todos los datos del producto -->
+            <div class="row">
+                <!-- datos del producto -->
+                <div class="col-sm-12 col-md-6" id="datos">
+                  
+
+                    <div class="mb-3">
+                        <label for="rut" class="form-label">ID</label>
+                        <input type="text" placeholder="" class="form-control" id="id" aria-describedby="emailHelp" value="58">
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+
+
+                      <label for="catproductos">Categoría</label><br>
+                        <select name="catproductos" id="catproductos">
+                        <option value="pistola">Pistola</option>
+                        <option value="municion">Munición</option>
+                        <option value="rifle">Rifle</option>
+                        
+                        </select>
+
+
+
+                    <div class="mb-3"><br>
+                      <label for="nomprod" class="form-label">Nombre</label>
+                      <input type="text" placeholder="" class="form-control" id="nomprod" aria-describedby="emailHelp" value="Glock">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+
+                    
+
+                    <div class="mb-3">
+                      <label for="descripcion" class="form-label">Descripción</label>
+                      <textarea rows="4" type="text" class="form-control" id="descripcion">Pistola semiautomática de alta calidad y fácil manejo, ideal para fuerzas militares, policiales y usuarios exigentes. Con su diseño innovador y sistema de seguridad integrado, es una opción confiable y segura para una amplia variedad de situaciones.</textarea>
+                    </div>
+
+                      
+                    <div class="mb-3">
+                        <label for="preciopro" class="form-label">Precio</label>
+                        <input type="text" class="form-control" id="preciopro" value="$900.000">
+                       
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="descsus" class="form-label">Descuento Suscripción</label>
+                        <input type="text" class="form-control" id="descsus" value="8%">
+                       
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="descofer" class="form-label">Descuento Oferta</label>
+                        <input type="text" class="form-control" id="descofer" value="3%">
+                       
+                    </div>
+
+
+  
+                      
+                  
+                </div>
+
+                <!-- foto producto -->
+                <div class="col-sm-12 col-md-6" id="foto-prod">
+                      <br>
+
+                    <form role="form">
+                      
+                      <img class="foto-prod" src="img/imgnotfound.png" alt="" width="350">
+                      <div class="form-group">
+                        <label for="imagen" class="form-label"></label>
+                        <input type="file" class="form-control" id="imagen" name="imagen">
+                        
+                      </div>
+                      
+                    </form>
+
+                    
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="row" id="botones">
+                <div class="col text-center">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-primary">Nuevo</button>
+                  <button type="delete" class="btn btn-primary">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <!-- tabla -->
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">ID</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Descuento Suscriptor</th>
+                <th scope="col">Descuento Oferta</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>></td>
+                <td>58</td>
+                <td>Pistola</td>
+                <td>Glock</td>
+                <td>Pistola semiautomática de alta calidad y fácil manejo, ideal para fuerzas militares, policiales y usuarios exigentes. Con su diseño innovador y sistema de seguridad integrado, es una opción confiable y segura para una amplia variedad de situaciones.</td>
+                <td>$900.000</td>
+                <td>8%</td>
+                <td>3%</td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td>1001</td>
+                <td>Rifle</td>
+                <td>Taurus CT9 G2</td>
+                <td>El rifle Taurus CT9 G2 es un arma semiautomática de alta calidad y gran precisión. Con su cañón de 16.5 pulgadas y su capacidad para disparar hasta 30 cartuchos.</td>
+                <td>$2.450.000</td>
+                <td>8%</td>
+                <td>3%</td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td>1002</td>
+                <td>Pistola</td>
+                <td>CZ 75 SP-01 Shadow</td>
+                <td>La pistola CZ 75 SP-01 Shadow es una de las más populares en el mercado de armas. Con su capacidad para disparar hasta 18 cartuchos, es una opción confiable y precisa para fuerzas militares y policiales.</td>
+                <td>$1.750.000</td>
+                <td>8%</td>
+                <td>3%</td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td>1103</td>
+                <td>Munición</td>
+                <td>Munición Winchester .308 Winchester</td>
+                <td> La munición Winchester .308 Winchester es una de las más populares en el mundo de la caza y el tiro deportivo.</td>
+                <td>$80.000</td>
+                <td>8%</td>
+                <td>3%</td>
+               
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+      <!-- pie de pagina -->
+      <br><br>
+      <hr>
+      <div class="row">
+        <footer>
+          <div class="footer-content">
+              <h3> GLOCK</h3>
+              <p>Aqui encontraras todo para hacer pagar a tus enemigos </p>
+              <p> contacto:  (+56) 964856221</p>
+              <ul class="socials">
+                  <li><a href=""><img src="img/logo-wsp.png  " class="fa fa-f  acebook"></a></li>
+                  <li><a href=""><img src="img/logo-ig.png" class="fa fa-twitter"></a></li>
+                  <li><a href=""><img src="img/logo-fb.png" class="fa fa-google-plus"></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy;2023 GLOCK. Diseñado por los Raja Hedionda </p>
+    
+          </div>
+      </footer>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
