@@ -12,9 +12,22 @@
 
 <body>
   <!-- cabecera con menu superior -->
-  <script>
-    document
-  </script>
+  <div name="menu-superior-cambio" id="menu-superior-cambio">
+    <script>
+      // Script para conseguir el menu superior
+      document.addEventListener('DOMContentLoaded', function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'menu.html', true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var menuHeaderContent = xhr.responseText;
+            var menuHeaderContainer = document.createElement('div');
+          }
+        };
+        xhr.send();
+      });
+    </script>
+  </div>
   <!-- Tabla de pruebas, la clase de la tabla se puede cambiar por 'table table-striped'-->
   <table class="table table-striped">
     <thead>
@@ -125,7 +138,7 @@
   </div>
 
 
-
 </body>
+
 
 </html>
