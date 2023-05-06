@@ -45,13 +45,69 @@
         <h2>¡Concursa por una prenda de vestirla!<br>
         ¡Por compras superiores a $20.000 en productos ya estás participando!</h2>
     </div>
+
+
+
+
+    <div class="row">
+      <button type="button" class="btn btn-primary" id="btn-obtener-ropa">Mirar Productos Disponibles</button>
+      <br>
+    </div>
+    <div class="row">
+      <table id="tabla-ropa" class="table table-hover"  >
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"> Precio </th>
+            <th scope="col"> Imagen </th>
+            <th scope="col"> Descripción </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aqui se cargarán las filas de la API REST -->
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+
+
     
+    <!-- <div class="row">
+      <button type="button" class="btn btn-primary" id="btn-obtener-ropa">Mirar Productos Disponibles</button>
+      <br>
+  </div>
+
+  <div class="row">
+      <table id="tabla-ropa" class="table table-hover"  >
+          <thead>
+              <tr>
+                  <th scope="col">#</th>
+                  <th scope="col"> Precio </th>
+                  <th scope="col"> Imagen </th>
+                  <th scope="col"> Descripción </th>
+              </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table>
+
+  </div>
+
+
+
+
+
+
       
-      <div class="fi-gallery">
+       <div class="fi-gallery">
         <div class="fi-row">
           <div class="fi-column">
             <div class="fi-image">
-              <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT8E95YHRfV_Y-vLq9GmAMcngxsaSPFau56-_agMZ9E6H1uR9r7S84tB0Gt5wjZVq-FLU5uZ3duvODdMJ6xgfqquUamH67KBQK8HJBLc-oeBQLd_Er665WIj8SXUnHLp1pfRg0&usqp=CAc">
+              <img src="">
               <div class="fi-description">
                 <p>$8.000</p>
                 <p>Pantalón de genero</p>
@@ -59,60 +115,11 @@
               </div>
             </div>
           </div>
-          <div class="fi-column">
-            <div class="fi-image">
-              <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQB5I5Ivf3Yyp48qZi6TdmV0DenOVcQjUVRXdKbBNzCSdKWljQz2vfTpo1qY_pgTg0Mpdm76hf9gHTMcloCcm8NyUWRscT5JxavBXIbtdVR5hRdjqNUiNSxeMH5p91JEHBRLrE&usqp=CAc">
-              <div class="fi-description">
-                <p>$8.000</p>
-                <p>Pantalón de genero</p>
-                <p>Color blanco</p>
-              </div>
-            </div>
-          </div>
-          <div class="fi-column">
-            <div class="fi-image">
-              <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ7ZWSdvNMINovm4O8rln3KtTFUX0h9meemFJBv8-U0Whhzs7fgm3z447Tsro3XqwDz1NwCAN2q52bFMUojAlNzxruBeqFjVwMfN717bbK-VHKYrWu0WIsdMh2hvSfTOWdEgQ&usqp=CAc">
-              <div class="fi-description">
-                <p>$8.000</p>
-                <p>Pantalón de genero</p>
-                <p>Color rojo</p>
-              </div>
-            </div>
-          </div>
+          
+        
         </div>
-        <div class="fi-row">
-          <div class="fi-column">
-            <div class="fi-image">
-              <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRAeVfop4L4ThWSo2GuRcWrtmTt-P-FL7XRno8YRIaJJHdC_EisNKUeARANSWoh35cGGRlvL1M9MloioMG1hjqq2Rf5I9quYnxrefiYzn-xyPCYbF5IvzwK2XUzUom5z6jKBBU&usqp=CAc">
-              <div class="fi-description">
-                <p>$8.000</p>
-                <p>Pantalón de genero</p>
-                <p>Color azul</p>
-              </div>
-            </div>
-          </div>
-          <div class="fi-column">
-            <div class="fi-image">
-              <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR0cbLjS37TEfWb0p5oqnxvgUXp0XO2-RBjhorfsLUNjVGf_cLjMX-Vkk4Q1aJhQ-de6I186hJYicQO1gxWZvzGIeGVH0LLnuim78Zjz2fL4DEV8dEicaI--x7rtDudsCF1R3A&usqp=CAc">
-              <div class="fi-description">
-                <p>$8.000</p>
-                <p>Pantalón de genero</p>
-                <p>Color Marrón</p>
-              </div>
-            </div>
-          </div>
-          <div class="fi-column">
-            <div class="fi-image">
-              <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcThO912cjeVNm4HEzb8-Ntf_KrYkdNiiVKrSWpv0JQ9zQa9-yaSCR1qcgtS8wNAdOSvyFVI0eIAlPZw86m9G3SjBdx32w1CiHYIuZORcxoDPLXxA_BsjHPhlfht-FNa3hpz6Q&usqp=CAc">
-              <div class="fi-description">
-                <p>$8.000</p>
-                <p>Pantalón de genero</p>
-                <p>Color verde</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+      </div>  -->
 
 
 
@@ -141,6 +148,26 @@
 
       </div>
   </footer>
+
+      <!-- JQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+      <!-- Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+          integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+          crossorigin="anonymous"></script>
+      
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+          integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+          crossorigin="anonymous"></script>
+  
+      <!-- Mis scripts -->
+      <script src="js/obtener_ropa.js"></script>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
