@@ -421,7 +421,6 @@ footer{
   padding: 20px;
   text-align: center;
   /* Position the footer at the bottom of the page */
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
