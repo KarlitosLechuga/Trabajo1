@@ -9,38 +9,7 @@
   </head>
   <body>
     <!-- cabecera con menu superior -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="inicio.html"> <img class="logo-glock" src="img/logo-glock.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="registro.html">Registrarme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="ingresar.html">Iniciar sesión</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="boleta.html">Mis compras anteriores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="inicio.html">Cerrar Sesión</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+    <div id="navbarContainer"></div>
 
     
     
@@ -153,7 +122,7 @@
 
 
 
-    <div class="row" style="float:right">
+      <div class="row" style="float:right">
         <label for="formGroupExampleInput" class="form-label">Precio sin IVA</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$8.500.000">
       </div>
@@ -178,28 +147,31 @@
 
 
       <!-- pie de pagina -->
-      <br><br>
-      <hr>
-      <div class="row">
-        <footer>
-          <div class="footer-content">
-              <h3> GLOCK</h3>
-              <p>Aqui encontraras todo para hacer pagar a tus enemigos </p>
-              <p> contacto:  (+56) 964856221</p>
-              <ul class="socials">
-                  <li><a href=""><img src="img/logo-wsp.png  " class="fa fa-f  acebook"></a></li>
-                  <li><a href=""><img src="img/logo-ig.png" class="fa fa-twitter"></a></li>
-                  <li><a href=""><img src="img/logo-fb.png" class="fa fa-google-plus"></a></li>
-              </ul>
-          </div>
-          <div class="footer-bottom">
-              <p>copyright &copy;2023 GLOCK. Diseñado por los Raja Hedionda </p>
-    
-          </div>
-      </footer>
-      </div>
-    </div>
+      <div id="footerContainer"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      // Recupera el menu superior
+      fetch('menu-header.html')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(newNavbarContent) {
+          // Reemplaza el div por el menu
+          var navbarContainer = document.getElementById('navbarContainer');
+          navbarContainer.innerHTML = newNavbarContent;
+        });
+    
+      // Recupera el footer
+      fetch('menu-footer.html')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(newFooterContent) {
+          // Reemplaza el div por el footer
+          var footerContainer = document.getElementById('footerContainer' );
+          footerContainer.innerHTML = newFooterContent;
+        });
+    </script>
   </body>
 </html>
