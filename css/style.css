@@ -419,3 +419,27 @@ footer{
   text-align: center;
   margin-top: auto;
 }
+
+
+  label.error {
+    color: red;
+  }
+
+  .was-validated input:invalid {
+    border-color: red;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .error {
+    display: block;
+  }
+
+  .is-invalid {
+    border-color: red !important;
+  }

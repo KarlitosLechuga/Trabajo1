@@ -14,32 +14,32 @@
 <body>
   <!-- Menu superior -->
   <div id="navbarContainer"></div>
-
   <main class="center-screen">
     <div class="container">
       <section class="text-center">
         <h1>Usuario</h1>
         <br>
-        <form class="row g-3 needs validation" action="" novalidate>
+        <form class="row g-3 needs-validation" action="" novalidate>
           <div class="container-fluid">
             <div class="row">
               <!-- Campos del registro de usuario -->
               <div class="col">
                 <div class="mb-3 fw-bold">
                   <label for="rut" class="form-label">Correo</label>
-                  <input type="email" class="form-control" id="correo" placeholder="prueba@algo.com">
+                  <input type="email" class="form-control" id="correo" placeholder="prueba@algo.com" required>
+                  <div class="invalid-feedback">Ingresar correo</div>
                 </div>
                 <div class="mb-3 fw-bold">
                   <label for="rut" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="contraseña" placeholder="***********">
+                  <input type="password" class="form-control" id="contraseña" placeholder="***********" required>
+                  <div class="invalid-feedback">Ingresar contraseña</div>
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <button type="submit" class="btn btn-primary">Ingresar</button>
                 </div>
               </div>
-              <a href="...">Olvidaste tu contraseña?</a>
+              <a href="#">Olvidaste tu contraseña?</a>
               <!-- foto de perfil -->
-
               <div class="col">
 
               </div>
@@ -48,8 +48,15 @@
         </form>
       </section>
     </div>
-
   </main>
+
+    <script src="js/ingresar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha384-/sT00TJG/JI2mS9i+o4JoavjzIVq8Tc3qOqkE6lVcR10aW90PvJkRrPugMIfiR3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"
+      integrity="sha512-r1kxJjKwy/9nAPrg/8+O7VNUdhBz5MHHdJLMYz5IMnm+5x5ysAVkXVaaO81JUcQ6S1+CFq3cy6UOd0YI4zcx4A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <div id="footerContainer"></div>
   
