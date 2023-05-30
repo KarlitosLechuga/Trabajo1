@@ -35,8 +35,8 @@
 
 $(document).ready(function() {
     // Las acciones de Jquery van dentro de la función ready
-    $('#btn-obtener-ropa').click(function() {
-      // Crear evento de click del boton usando su id #btn-obtener
+    
+     
       $.get('https://fakestoreapi.com/products', function(data) {
         $('#tabla-ropa tbody').empty();
         var galeria = $("<div class='fi-gallery'></div>");
@@ -65,5 +65,5 @@ $(document).ready(function() {
   
         $("#tabla-ropa").replaceWith(galeria);
       });
-    });
+    
   });

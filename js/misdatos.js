@@ -2,15 +2,15 @@ $("#misdatos").validate({
     rules: {
         "txtrut": {
           required: true,
-          rut: true
+          
         },
         "txtnombre": {
           required: true,
-          nombre: true
+          
         },
         "txtapellido": {
           required: true,
-          apellido: true
+          
         },
         "txtcorreo": {
             required: true,
@@ -18,7 +18,7 @@ $("#misdatos").validate({
         },
         "txtdireccion": {
           required: true,
-          direccion: true
+          
         },
         
         "txtcontrasena": {
@@ -27,31 +27,31 @@ $("#misdatos").validate({
         },
         "txtrepetircontrasena": {
             required: true,
-            equalTo: '#id_txtContrasena'
+            equalTo: '#txtcontrasena'
         },
   
     }, // --> Fin de reglas
     messages: {
     
       "txtrut": {
-          required: 'Ingrese su Rut',
-          rut: 'Campo Oligatorio'
+          required: 'El campo Rut es obligatorio',
+          
       },
       "txtnombre": {
           required: 'Ingrese su Nombre',
-          nombre: 'Campo Obligatorio'
+          
       },
       "txtapellido": {
           required: 'Ingrese su Apellido',
-          apellido: 'Campo Oligatorio'
+          
       },
       "txtcorreo": {
           required: 'Ingrese email',
-          email: 'No cumple formato'
+          email: 'El formato del correo no está correcto'
       },
       "txtdireccion": {
           required: 'Ingrese Dirección',
-          direccion: 'Campo Oligatorio'
+          
       },
       "txtcontrasena": {
           required: 'Ingrese Contraseña',
@@ -72,6 +72,6 @@ $("#misdatos").validate({
   });
   
   $("#limpiar").on("click", function () {
-    $("#formulario1")[0].reset();
+    $("#misdatos")[0].reset();
   });
   

@@ -1,34 +1,30 @@
-// Obtener los elementos de nombre y cantidad
-const nombreInput = document.getElementById("nomprod");
-const cantidadInput = document.getElementById("cantipro");
+$("#formulariobodega").validate({
+  rules: {
+      "cantipro": {
+        required: true,
+        number: true,
+        
+      },
+      
 
-// Obtener los elementos de mensaje de error
-const nombreError = document.getElementById("nomprod-error");
-const cantidadError = document.getElementById("cantipro-error");
+  }, // --> Fin de reglas
+  messages: {
+  
+    "cantipro": {
+        required: 'El campo Cantidad es obligatorio',
+        number: 'Debe ser número'
+    },
+    
+    
+  } //-->Fin de mensajes
+  
 
-// Agregar un evento de submit al formulario
-document.querySelector("form").addEventListener("submit", function(event) {
-  // Validar el campo de nombre
-  if (nombreInput.value.trim() === "") {
-    // Mostrar el mensaje de error
-    nombreError.innerHTML = "El campo de nombre es obligatorio";
-    nombreError.classList.add("error");
-    event.preventDefault();
-  } else {
-    // Ocultar el mensaje de error
-    nombreError.innerHTML = "";
-    nombreError.classList.remove("error");
-  }
+});
 
-  // Validar el campo de cantidad
-  if (cantidadInput.value.trim() === "") {
-    // Mostrar el mensaje de error
-    cantidadError.innerHTML = "El campo de cantidad es obligatorio";
-    cantidadError.classList.add("error");
-    event.preventDefault();
-  } else {
-    // Ocultar el mensaje de error
-    cantidadError.innerHTML = "";
-    cantidadError.classList.remove("error");
-  }
+$("#Agregar").on("click", function () {
+  alert("Los datos se han guardado correctamente");
+});
+
+$("#Nuevo").on("click", function () {
+  $("#formulariobodega")[0].reset();
 });
