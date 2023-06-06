@@ -34,7 +34,7 @@
     
             <div class="mb-3">
               <label for="rut" class="form-label">RUT</label>
-              <input type="text" placeholder="Ejemplo: 12345678-9" class="form-control" id="txtrut" name="txtrut"  >
+              <input type="text" placeholder="Ejemplo: 12345678-9" class="form-control" id="txtrut" pattern="\d{1,8}-\d{1}" title="El formato debe ser 12345678-9" name="txtrut"  >
               <div id="emailHelp" class="form-text"></div>
             </div>
     
@@ -68,7 +68,7 @@
     
             <div class="mb-3">
               <label for="contraseña" class="form-label">Contraseña</label>
-              <input type="text" class="form-control" id="txtcontraseña" name="txtcontraseña" >
+              <input type="password" class="form-control" id="txtcontraseña" name="txtcontraseña" >
               <button type="button" class="btn btn-primary">Generar contraseña</button>
             </div>
           </div>
