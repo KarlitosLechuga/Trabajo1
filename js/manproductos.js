@@ -4,6 +4,10 @@ $("#formulario").validate({
         required: true,
         number: true
       },
+      "nomproducto": {
+        required: true,
+        
+      },
       "txtdescripcion": {
         required: true,
         
@@ -29,6 +33,10 @@ $("#formulario").validate({
         required: 'El campo ID es obligatorio', 
         
     },
+    "nomproducto": {
+      required: 'Ingrese nombre del producto',
+      
+  },
     "txtdescripcion": {
         required: 'Ingrese descripción',
         
