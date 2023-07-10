@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet"  href="{% static 'core/css/style.css' %}">
+{% endblock %}
+
+{% block content%}
+<body>
+    <!-- cabecera con menu superior -->
+    <div id="navbarContainer"></div>
+    <!-- Datos del producto -->
+    <!-- contenedor -->
+    <div class="row">
+        <!-- imagen -->
+        <div class="col">
+            <img class="foto-prod" src="img/imgnotfound.png" alt="" width="350">
+        </div>
+        <!-- texto con datos y formato -->
+        <div class="col">
+            <div class="mb-3 fw-bold">
+                <p>Glock 17</p>
+                <br>
+                <p style="color: green;">Disponible en Bodega</p>
+                <br>
+                <p style="font-size: larger;">$250.000</p>
+                <br>
+                <p>Descripción:</p>
+                <br>
+                <p>Un arma de 9x19mm comoda para uso individual como defensa personal</p>
+                <br>
+                <p>En stock</p>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="submit" class="btn btn-primary">Comprar ahora</button>
+                    <button type="reset" class="btn btn-primary">agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      {% endblock %}
