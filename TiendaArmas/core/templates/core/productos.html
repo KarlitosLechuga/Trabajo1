@@ -21,7 +21,7 @@
 
                   <div class="mb-3">
                       <label for="rut" class="form-label">ID</label>
-                      <input type="text" placeholder="" class="form-control" id="txtid" name="txtid" aria-describedby="emailHelp" value="58">
+                      <input type="number" placeholder="" class="form-control" id="txtid" name="txtid" aria-describedby="emailHelp" >
                       <div id="emailHelp" class="form-text"></div>
                       <span class="error" id="id-error"></span> <!-- mensaje de error -->
                   </div>
@@ -34,34 +34,35 @@
                       <option value="rifle">Rifle</option>
                   </select><br>
   
-                  <label for="catproductos">Nombre</label><br>
-                  <select name="catproductos" id="nomproductos">
-                      <option value="pistola">Glock</option>
-                  </select>
+                  <div class="mb-3">
+                    <label for="nomproducto" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nomproducto" name="nomproducto" >
+                    <span class="error" id="nomproducto-error"></span> <!-- mensaje de error -->
+                </div>
   
                   <div class="mb-3">
                       <label for="descripcion" class="form-label">Descripción</label>
-                      <textarea rows="4" type="text" class="form-control" name="txtdescripcion" id="txtdescripcion">Pistola semiautomática de alta calidad y fácil manejo, ideal para fuerzas militares, policiales y usuarios exigentes. Con su diseño innovador y sistema de seguridad integrado, es una opción confiable y segura para una amplia variedad de situaciones.</textarea>
+                      <textarea rows="4" type="text" class="form-control" name="txtdescripcion" id="txtdescripcion"></textarea>
                   </div>
   
   
                   <div class="mb-3">
                       <label for="preciopro" class="form-label">Precio</label>
-                      <input type="text" class="form-control" id="txtpreciopro" name="txtpreciopro" value="900.000">
+                      <input type="number" class="form-control" id="txtpreciopro" name="txtpreciopro" >
                       <span class="error" id="preciopro-error"></span> <!-- mensaje de error -->
                   </div>
   
   
                   <div class="mb-3">
                       <label for="descsus" class="form-label">Descuento Suscripción</label>
-                      <input type="text" class="form-control" id="txtdescsus" name="txtdescsus" value="8">
+                      <input type="number" class="form-control" id="txtdescsus" name="txtdescsus" >
                       <span class="error" id="descsus-error"></span> <!-- mensaje de error -->
                   </div>
   
   
                   <div class="mb-3">
                       <label for="descofer" class="form-label">Descuento Oferta</label>
-                      <input type="text" class="form-control" id="txtdescofer" name="txtdescofer" value="3">
+                      <input type="number" class="form-control" id="txtdescofer" name="txtdescofer" >
                       <span class="error" id="descofer-error"></span> <!-- mensaje de error -->
                   </div>
               </div>
