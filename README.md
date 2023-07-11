@@ -1,5 +1,5 @@
 # Trabajo1
-Primer Trabajo Programación Web Sección 002D
+Trabajo Programación Web Sección 002D
 
 Integrantes:
 Lukas Urrutia

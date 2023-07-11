@@ -1,0 +1,52 @@
+{% load static %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<link rel="icon" href="{% static 'img/icon.png' %}">
+<!-- <div class="card-header "> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="logo">
+            <img src="{% static 'img/logo-glock.png' %}" alt="">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'paginainicio' %}">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'productos' %}">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+            </li>
+            {% if user.is_superuser == True %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'administrar' %}">Administrar</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'concurso_ropa' %}">Concurso</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'mis_compras' user.id %}">Mis compras</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'misdatos' user.username %}">Mis datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'cerrarsesion' %}">Cerrar Sesión</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'iniciarsesion' %}">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'registro' %}">Registro</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    
+<!-- </div>  -->
